@@ -17,7 +17,7 @@ The page also includes a fixed sidebar for navigation and quick actions, and a h
 
 ## Live Demo
 
-[Live](https://m7md-gom3aa.github.io/-/)
+[Live](https://m7md-gom3aa.github.io/finance-dashboard-ui/)
 
 ## Technologies Used
 
