@@ -491,12 +491,17 @@ ul {
   border-left: solid 0.25rem #61ca53;
   background-color: #f0fdf4;
 }
-
+.secondary-box,
+.table,
+.transactions {
+  min-width: 0;
+}
 .all-activivites {
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: solid 1px #f3f4f6;
   a {
+    text-decoration: none;
     display: block;
     font-size: 0.875rem;
     font-weight: 500;
@@ -529,11 +534,13 @@ ul {
 .transactions {
   grid-area: transactions;
   display: flex;
+  min-width: 0;
   .secondary-box {
     padding: 1.5rem;
     flex: 1;
     display: flex;
     flex-direction: column;
+    min-width: 0;
   }
   .head {
     display: flex;
@@ -541,15 +548,29 @@ ul {
     justify-content: space-between;
     margin-bottom: 1rem;
   }
+  .table::-webkit-scrollbar {
+    display: block;
+    height: 6px;
+  }
+  .table::-webkit-scrollbar-track {
+    background: #f3f4f6;
+  }
+  .table::-webkit-scrollbar-thumb {
+    background-color: #d1d5db;
+    border-radius: 999px;
+  }
   .table {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    display: flex;
-    flex: 1;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    scrollbar-color: #d1d5db #f3f4f6;
     table {
+      width: 100%;
       min-width: 600px;
       border-collapse: collapse;
-      flex-grow: 1;
     }
   }
   .sr-only {
