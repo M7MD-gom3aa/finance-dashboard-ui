@@ -141,14 +141,6 @@
   font-size: 0.625rem;
   line-height: 0.875rem;
 }
-@media (max-width: 599px) {
-  .transactions .table {
-    scrollbar-width: none;
-  }
-  .transactions .table::-webkit-scrollbar {
-    display: none;
-  }
-}
 
 @media (min-width: 640px) {
   .container .header .main-box {
